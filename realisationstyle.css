@@ -1,0 +1,195 @@
+/*global*/
+body {
+  background-image: url("/photo/background3.jpeg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 50vh; /* Assurez-vous que le corps s'étend sur toute la hauteur de la fenêtre */
+  margin: 0;
+}
+
+html{
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+.indexh1 {
+  text-align: center;
+  font-size: 50px;
+  color: #F285C1;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 100px;
+ margin-right: auto;
+  margin-left: auto;
+}
+
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main */
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  margin: 0rem;
+  overflow: hidden;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%); 
+  user-select: none; /* -- Prevent image highlighting -- */
+}
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+
+/* -- YouTube Link Styles -- */
+
+body.menu-toggled > .meta-link > span {
+  color: rgb(30, 30, 30);
+}
+
+#source-link {
+  bottom: 60px;
+}
+
+#source-link > i {
+  color: rgb(94, 106, 210);
+}
+
+#yt-link > i {
+  color: rgb(239, 83, 80);
+}
+
+.meta-link {
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  bottom: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;  
+  display: inline-flex;
+  gap: 5px;
+  left: 10px;
+  padding: 10px 20px;
+  position: fixed;
+  text-decoration: none;
+  transition: background-color 400ms, border-color 400ms;
+  z-index: 10000;
+}
+
+.meta-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.meta-link > i, .meta-link > span {
+  height: 20px;
+  line-height: 20px;
+}
+
+.meta-link > span {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+
+/*navbar*/
+.nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa93; /* Couleur de fond */
+  border-radius: 5px; /* Coins arrondis */
+  box-shadow: 0 2px 50px rgba(176, 82, 197, 0); /* Ombre */
+}
+
+.nav-item {
+  margin: 0 100px; /* Espacement horizontal entre les éléments */
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.nav-link {
+  color: rgb(52, 50, 52); /* Couleur du texte */
+  text-decoration: none;
+  padding: 10px; /* Espacement interne */
+  transition: color 0.3s; /* Transition de couleur au survol */
+}
+
+.nav-link:hover {
+  color: rgb(142, 61, 139); /* Couleur du texte au survol */
+}
+.nav-link.active {
+  font-weight: bold; /* Exemple de style pour indiquer l'élément actif */
+  color: #F285C1; /* Exemple de style pour indiquer l'élément actif */
+}
+
+  /*footer deco*/
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f200; /* Couleur de fond du pied de page */
+    padding: 10px;
+    text-align: center;
+    color: #555;
+    background-color: #f8f9fa6f;
+  }
+  
+  footer p {
+    margin: 0; /* Supprime les marges autour du paragraphe */
+  }
+  
+  footer a {
+    color: #555; /* Couleur des liens */
+    text-decoration: none; /* Supprime la décoration des liens */
+    margin: 0 10px; /* Marge horizontale des liens */
+  }
+  
+  footer a:hover {
+    color: #888; /* Couleur des liens au survol */
+  }
+  
+  footer .social-icons {
+    margin-top: 10px; /* Marge supérieure des icônes sociales */
+  }
+  
+  footer .social-icons a {
+    display: inline-block; /* Affiche les icônes sociales en ligne */
+    width: 30px; /* Largeur des icônes sociales */
+    height: 30px; /* Hauteur des icônes sociales */
+    background-color: #555; /* Couleur de fond des icônes sociales */
+    color: #fff; /* Couleur du texte des icônes sociales */
+    border-radius: 50%; /* Bordure arrondie des icônes sociales */
+    text-align: center; /* Alignement du texte au centre des icônes sociales */
+    line-height: 30px; /* Hauteur de ligne pour centrer verticalement le texte */
+    margin: 0 5px; /* Marge horizontale des icônes sociales */
+    text-decoration: none; /* Supprime la décoration des liens des icônes sociales */
+  }
+  
+  footer .social-icons a:hover {
+    background-color: #888; /* Couleur de fond des icônes sociales au survol */
+  }
+  
